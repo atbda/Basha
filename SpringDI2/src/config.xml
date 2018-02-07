@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+<bean id="1" class="NiiT">
+         <property name="branch" Value="Jayanagar"/>
+    
+      
+    </bean>
+    <bean id="2" class="NiiT">
+         <property name="branch" Value="Malleshwarm"/>
+    
+      
+    </bean>
+    <bean id="3" class="NiiT">
+         <property name="branch" Value="Banshankri"/>
+    </bean>
+         <bean id="4" class="NiiT">
+         <property name="branch" Value="RT Nagar"/>
+    
+      
+    </bean>
+    <bean id="1C" class="NiiTCode">
+         <property name="code" Value="101"/>
+    
+    
+      
+    </bean>
+     <bean id="2C" class="NiiTCode">
+         <property name="code" Value="102"/>
+    
+    
+      
+     </bean>
+     <bean id="3C" class="NiiTCode">
+         <property name="code" Value="103"/>
+    
+    
+      
+    </bean>
+     <bean id="4C" class="NiiTCode">
+         <property name="code" Value="104"/>
+    
+    
+      
+   </bean>
+   
+     <bean id="1A" class="NiitAddress">
+         <property name="address" Value="ASDFGH"/>
+    
+    
+      
+   </bean>
+  <bean id="2A" class="NiitAddress">
+         <property name="address" Value="ASDFvbGH"/>
+    
+    
+      
+   </bean>
+     <bean id="3A" class="NiitAddress">
+         <property name="address" Value="ASDFcbGH"/>
+    
+    
+      
+   </bean>
+     <bean id="4A" class="NiitAddress">
+         <property name="address" Value="ASvZDFGH"/>
+    
+    
+      
+   </bean>
+   
+ <bean id="NIITCenter" class="NIITCenter">
+        
+        <property name="Nlist" >
+            <list>
+                
+                <ref bean="1"/>
+                <ref bean="2"/>
+                <ref bean="3"/>
+                <ref bean="4"/>
+            </list>
+            
+            
+        </property>
+         <property name="NCode" >
+            <list>
+                
+                <ref bean="1C"/>
+                <ref bean="2"/>
+                <ref bean="3"/>
+                <ref bean="4"/>
+            </list>
+            
+            
+        </property>
+        
+    </bean>
+
+
+</beans>
