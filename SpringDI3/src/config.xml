@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+    
+    <bean id="address" class="springdi3.Address">
+        
+        <property name="pincode" value="123"/>
+        <property name="colony" value="Jayanagr"/>
+        <property name="homeNO" value="H123"/>
+    </bean>
+    
+    <bean id="emp" class="springdi3.Emp">
+        
+        <property name="id" value="111"/>
+        <property name="name" value="Basha"/>
+        <property name="address" ref="address"/>
+    </bean>
+    
+    
+    <bean id="st1" class="springdi3.Student">
+        <property name="sid" value="163"/>
+        <property name="sname" value="Basah"/>
+        <property name="courseName" value="DT DEVOPS"/>
+    </bean>
+
+<bean id="st2" class="springdi3.Student">
+        <property name="sid" value="172"/>
+        <property name="sname" value="Deepti"/>
+        <property name="courseName" value="DT DEVOPS"/>
+    </bean>
+    
+    
+    <bean id="niit" class="springdi3.NIITPortal">
+        <property name="centreCode" value="00403"/>
+        <property name="centreName" value="NIIT JayaNagar"/>
+        <property name="slist" >
+            <list>
+                
+                <ref bean="st1"/>
+                <ref bean="st2"/>
+            </list>
+            
+            
+        </property>
+        
+    </bean>
+</beans>
