@@ -14,6 +14,9 @@ class Student {
     private String sname;
     private String courseName;
 
+    public Student() {
+    }
+
     public Student(int sid, String sname, String courseName) {
         this.sid = sid;
         this.sname = sname;

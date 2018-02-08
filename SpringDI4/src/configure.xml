@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+<bean id="1" class="springdi4.Students">
+         <property name="sid" value="1454"/>
+         <property name="sname" value="Ravi"/>
+         <property name="course" value="DT"/>
+         <property name="address" value="Jayanagar"/>
+    
+      
+    </bean>
+    
+    <bean id="2" class="springdi4.Students">
+         <property name="sid" value="5215"/>
+         <property name="sname" value="Rahul"/>
+         <property name="course" value="DT"/>
+         <property name="address" value="Banshankri"/>
+    
+      
+    </bean>
+    <bean id="3" class="springdi4.Students">
+         <property name="sid" value="152345"/>
+         <property name="sname" value="Ramu"/>
+         <property name="course" value="DT"/>
+         <property name="address" value="xbzxbz"/>
+    
+      
+    </bean>
+    <bean id="4" class="springdi4.Students">
+         <property name="sid" value="154"/>
+         <property name="sname" value="xbzx"/>
+         <property name="course" value="DT"/>
+         <property name="address" value="bxbzb"/>
+    
+      
+    </bean>
+    
+    
+     <bean id="E1" class="springdi4.Emp">
+        <property name="eid" value="234"/>
+        <property name="ename" value="BASHA"/>
+        <property name="mob" value="125563985"/>
+         <property name="address" value="RT Nagar"/>
+    </bean>
+    <bean id="E2" class="springdi4.Emp">
+        <property name="eid" value="2343"/>
+        <property name="ename" value="hjjbjsc"/>
+        <property name="mob" value="125563"/>
+         <property name="address" value="RT Nagar"/>
+    </bean>
+    <bean id="E3" class="springdi4.Emp">
+        <property name="eid" value="234"/>
+        <property name="ename" value="BASHA"/>
+        <property name="mob" value="125563985"/>
+         <property name="address" value="RT Nagar"/>
+    </bean>
+    <bean id="E4" class="springdi4.Emp">
+        <property name="eid" value="234"/>
+        <property name="ename" value="BASHA"/>
+        <property name="mob" value="125563985"/>
+         <property name="address" value="RT Nagar"/>
+    </bean>
+    <bean id="NIIT" class="springdi4.NIIT">
+        
+        <property name="Slist" >
+            <list>
+                
+                <ref bean="1"/>
+                <ref bean="2"/>
+                <ref bean="3"/>
+                <ref bean="4"/>
+            </list>
+        </property>
+        
+        <property name="Elist">
+            <list>
+                
+                <ref bean="E1"/>
+                <ref bean="E2"/>
+                <ref bean="E3"/>
+                <ref bean="E4"/>
+            </list>
+        </property>
+    
+    </bean>
+</beans>

@@ -4,61 +4,75 @@
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
 ">
-<bean id="1" class="springdi2.NiiT">
-         <property name="Branch" Value="Jayanagar"/>
-         <property name="Code" Value="1234"/>
-         <property name="Address" Value="Jayanagar"/>
-         <property name="Courses" Value="DT"/>
+<bean id="NiiT" class="NiiT">
+         <property name="branch" Value="Jayanagar"/>
+           <property name="code" Value="101"/>
+            <property name="address" Value="ASvZDFGH"/>
+             <property name="courses" Value="dt"/>
+      
+    </bean>
+    <bean id="2" class="NiiT">
+         <property name="branch" Value="Malleshwarm"/>
     
       
     </bean>
-    <bean id="2" class="springdi2.NiiT">
-            <property name="Branch" Value="Malleshwarm"/>
-         <property name="Code" Value="12345"/>
-         <property name="Address" Value="Malleshwarm"/>
-          <property name="Courses" Value="DT"/>
-         
+    <bean id="3" class="NiiT">
+         <property name="branch" Value="Banshankri"/>
+    </bean>
+         <bean id="4" class="NiiT">
+         <property name="branch" Value="RT Nagar"/>
     
       
     </bean>
-    <bean id="3" class="springdi2.NiiT">
-            <property name="Branch" Value="Banshankri"/>
-         <property name="Code" Value="123456"/>
-         <property name="Address" Value="Banshankri"/>
-            <property name="Courses" Value="DT"/>
-         
-        
-    </bean>
-         <bean id="4" class="springdi2.NiiT">
-                 <property name="Branch" Value="RT Nagar"/>
-         <property name="Code" Value="1234567"/>
-         <property name="Address" Value="RT Nagar"/>
-            <property name="Courses" Value="DT"/>
-           
-    </bean>
+    <bean id="1C" class="NiiTCode">
+         <property name="code" Value="101"/>
     
-     
-    <bean id="s1" class="springdi2.Student">
-        <property name="Sid" value="234"/>
-        <property name="Sname" value="BASHA"/>
-        <property name="CourseName" value="DT DEVOPS"/>
+    
+      
     </bean>
-     <bean id="s2" class="springdi2.Student">
-        <property name="Sid" value="2343"/>
-        <property name="Sname" value="KUMAR"/>
-        <property name="CourseName" value="DT DEVOPS"/>
+     <bean id="2C" class="NiiTCode">
+         <property name="code" Value="102"/>
+    
+    
+      
      </bean>
- <bean id="s3" class="springdi2.Student">
-        <property name="Sid" value="2344"/>
-        <property name="Sname" value="RAHUL"/>
-        <property name="CourseName" value="CORE JAVA"/>
-    </bean>
- <bean id="s4" class="springdi2.Student">
-        <property name="Sid" value="2345"/>
-        <property name="Sname" value="RAVI"/>
-        <property name="CourseName" value="PGP"/>
-    </bean></beans>
+     <bean id="3C" class="NiiTCode">
+         <property name="code" Value="103"/>
     
+    
+      
+    </bean>
+     <bean id="4C" class="NiiTCode">
+         <property name="code" Value="104"/>
+    
+    
+      
+   </bean>
+   
+     <bean id="1A" class="NiitAddress">
+         <property name="address" Value="ASDFGH"/>
+    
+    
+      
+   </bean>
+  <bean id="2A" class="NiitAddress">
+         <property name="address" Value="ASDFvbGH"/>
+    
+    
+      
+   </bean>
+     <bean id="3A" class="NiitAddress">
+         <property name="address" Value="ASDFcbGH"/>
+    
+    
+      
+   </bean>
+     <bean id="4A" class="NiitAddress">
+         <property name="address" Value="ASvZDFGH"/>
+    
+    
+      
+   </bean>
    
  <bean id="NIITCenter" class="NIITCenter">
         
@@ -71,18 +85,21 @@
                 <ref bean="4"/>
             </list>
             
+            
+        </property>
+         <property name="NCode" >
             <list>
                 
-                <ref bean="s1"/>
-                <ref bean="s2"/>
-                <ref bean="s3"/>
-                <ref bean="s4"/>
+                <ref bean="1C"/>
+                <ref bean="2"/>
+                <ref bean="3"/>
+                <ref bean="4"/>
             </list>
+            
+            
         </property>
-      
         
     </bean>
-
 
 
 </beans>

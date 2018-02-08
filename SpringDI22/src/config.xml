@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+<bean id="1" class="springdi2.NiiT">
+         <property name="Branch" value="Jayanagar"/>
+         <property name="Code" value="1234"/>
+         <property name="Address" value="Jayanagar"/>
+         <property name="Course" value="DT"/>
+    
+      
+    </bean>
+    <bean id="2" class="springdi2.NiiT">
+            <property name="Branch" value="Malleshwarm"/>
+         <property name="Code" value="12345"/>
+         <property name="Address" value="Malleshwarm"/>
+          <property name="Course" value="DT"/>
+         
+    
+      
+    </bean>
+    <bean id="3" class="springdi2.NiiT">
+            <property name="Branch" value="Banshankri"/>
+         <property name="Code" value="123456"/>
+         <property name="Address" value="Banshankri"/>
+            <property name="Course" value="DT"/>
+         
+        
+    </bean>
+         <bean id="4" class="springdi2.NiiT">
+                 <property name="Branch" value="RT Nagar"/>
+         <property name="Code" value="1234567"/>
+         <property name="Address" value="RT Nagar"/>
+            <property name="Course" value="DT"/>
+           
+    </bean>
+    
+     
+    <bean id="s1" class="springdi2.Student">
+        <property name="Sid" value="234"/>
+        <property name="Sname" value="BASHA"/>
+        <property name="Course" value="DT DEVOPS"/>
+         <property name="Address" value="RT Nagar"/>
+    </bean>
+     <bean id="s2" class="springdi2.Student">
+        <property name="Sid" value="2343"/>
+        <property name="Sname" value="KUMAR"/>
+        <property name="Course" value="DT DEVOPS"/>
+          <property name="Address" value="Banshankri"/>
+     </bean>
+     
+ <bean id="s3" class="springdi2.Student">
+        <property name="Sid" value="2344"/>
+        <property name="Sname" value="RAHUL"/>
+        <property name="Course" value="CORE JAVA"/>
+            <property name="Address" value="Malleshwarm"/>
+    </bean>
+    
+ <bean id="s4" class="springdi2.Student">
+        <property name="Sid" value="2345"/>
+        <property name="Sname" value="RAVI"/>
+        <property name="Course" value="PGP"/>
+             <property name="Address" value="Jayanagar"/>
+    </bean>
+
+    
+   
+ <bean id="NIITCenter" class="springdi2.NIITCenter">
+        
+        <property name="Nlist" >
+            <list>
+                
+                <ref bean="1"/>
+                <ref bean="2"/>
+                <ref bean="3"/>
+                <ref bean="4"/>
+            </list>
+        </property>
+        
+        <property name="slist">
+            <list>
+                
+                <ref bean="s1"/>
+                <ref bean="s2"/>
+                <ref bean="s3"/>
+                <ref bean="s4"/>
+            </list>
+        </property>
+      
+        
+    </bean>
+
+</beans>
+
+
